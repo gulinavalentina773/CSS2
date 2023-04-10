@@ -1,0 +1,46 @@
+button {
+    border: #FFFFFF;
+    border-radius: 0;
+    color: #FFFFFF;
+    box-shadow: 3px 3px 0 0 #303030;
+    background-color: #4ba5f8;
+    margin: 10px;
+    width: 20%;
+    padding: 10px;
+    font: 15px "Trebuchet MS", "Lucida Sans";
+}
+
+.spisok {
+    counter-reset: li; 
+    list-style: none; 
+    font: 15px "Trebuchet MS", "Lucida Sans";
+    padding: 10px;
+    margin-left: 15px;
+ }
+
+.spisok li {
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+    background: #d0e3fda6;
+    color: #000000;
+    border-radius: 2px;
+    left: -15px;
+}
+  
+.spisok li::before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    margin-top: -20px;
+    background: #4ba5f8;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: 4px solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 100px;
+}
