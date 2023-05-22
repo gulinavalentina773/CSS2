@@ -1,46 +1,50 @@
-button {
-    border: #FFFFFF;
-    border-radius: 0;
-    color: #FFFFFF;
-    box-shadow: 3px 3px 0 0 #303030;
-    background-color: #4ba5f8;
-    margin: 10px;
-    width: 20%;
-    padding: 10px;
-    font: 15px "Trebuchet MS", "Lucida Sans";
+.button {
+    padding: 2%;
+    margin-bottom: 1%;
 }
 
-.spisok {
-    counter-reset: li; 
-    list-style: none; 
-    font: 15px "Trebuchet MS", "Lucida Sans";
-    padding: 10px;
-    margin-left: 15px;
- }
-
-.spisok li {
-    position: relative;
-    padding: 15px;
-    margin: 10px;
-    background: #d0e3fda6;
-    color: #000000;
-    border-radius: 2px;
-    left: -15px;
+.b {
+    background-color: #ce9cb2;
+    color: white;
+    border: 0;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+    box-shadow: 4px 4px 0px 0px #310231;
+    cursor: pointer;
 }
-  
-.spisok li::before{
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -25px;
-    top: 50%;
-    margin-top: -20px;
-    background: #4ba5f8;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    border: 4px solid white;
+
+
+.u {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.number {
+    list-style-type:none;
+}
+
+.n {
+    color: white;
+    background-color: #580c40;
+    padding: 2px;
+    width: 150%;
+    margin: 90%;
     text-align: center;
-    font-weight: bold;
-    border-radius: 100px;
+}
+
+.main {
+    list-style-type:none;
+}
+
+.m {
+    color: white;
+    background-color: #986b7f;
+    padding: 4px;
+    padding-left: 20%;
+    margin-top: 10%;
+    width: 120%;
+    box-shadow: 3px 3px 0px 0px #310231;
 }
